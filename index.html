@@ -6,10 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <script defer src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <title>Snake Game</title>
   </head>
   <body>
-    <h1>Snake Game</h1>
-    <canvas id="snake" width="512" height="512"></canvas>
+    <h1>SNAKE GAME</h1>
+
+    <div class="score-container">
+      <p class="score">SCORE <span id="score">0</span></p>
+    </div>
+
+    <div class="game-container">
+      <canvas id="snake" width="512" height="512"></canvas>
+      <div id="game-status"></div>
+    </div>
+
+    <div class="btns">
+      <button class="btn" id="btn-pause">PAUSE</button>
+      <button class="btn" id="btn-play-again">PLAY AGAIN</button>
+    </div>
   </body>
 </html>
